@@ -3,5 +3,17 @@
 <h2><app-user-list></app-user-list></h2>
 <app-sign-in></app-sign-in>
 
+<input type="text" #box (keyup)="printConsoleWithData(box.value)" placeholder="enter console data"/>
+<br/><br/>
+<input type="text" #box1 (blur)="printConsoleOnBlur(box.value)" placeholder="enter console data"/>
+
+<br/>
+<br/>
+<h2 (mouseover)="mouseOverCalled()">MouseOver Example</h2>
+<br/>
+<h2 (mouseleave)="mouseLeaveCalled()">MouseLeave Example</h2>
+
+
 <button (click)="getName()">Click me</button>
 <button (click)="getFullName('Raju kumar')">get first name</button>
+<button (click)="printConsoleData()">Consol Data</button>

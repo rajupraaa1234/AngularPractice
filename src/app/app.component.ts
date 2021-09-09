@@ -12,5 +12,24 @@ export class AppComponent {
   }
   getFullName(name:any){
     alert("Hello " + name)
+    console.warn("This is consol data")
   }
+  printConsoleData(){
+    console.warn("This is consol data")
+  }
+  printConsoleWithData(val :string){
+    console.warn(val)
+  }
+  printConsoleOnBlur(val : string){
+    console.warn(val)
+  }
+
+  mouseOverCalled(){
+    console.warn("MouseOver Called")
+  }
+
+  mouseLeaveCalled(){
+    console.warn("MouseLeave Called")
+  }
+
 }
