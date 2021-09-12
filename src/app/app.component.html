@@ -48,14 +48,21 @@
  </ng-template>
 
  <br/>
+
+ <!-- Switch case -->
  <div [ngSwitch]="color1">
     <h2 *ngSwitchCase="'red'" style="color: red;">Red Color</h2>
     <h2 *ngSwitchCase="'green'" style="color: green;">Green Color</h2>
     <h2 *ngSwitchCase="'blue'" style="color: blue;">blue Color</h2>
     <h2 *ngSwitchCase="'yellow'" style="color: yellow;">yellow Color</h2>
     <h2 *ngSwitchDefault >Default Color</h2>
-
  </div>
+
+ <!-- For Loop -->
+ <h2 *ngFor = "let item of users">name is : {{item}}</h2>
+
+ <h2 *ngFor = "let items of usersDetail">{{items.name}}  {{items.Dob}} {{items.Address}} {{items.mob}}</h2>
+
 
 <button (click)="getName()">Click me</button>
 <button (click)="getFullName('Raju kumar')">get first name</button>

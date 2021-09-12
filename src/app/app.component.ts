@@ -11,6 +11,13 @@ export class AppComponent {
   show = false;
   color = "blue";
   color1 ="green";
+  users = ["Raju kumar","Rahul kumar gupta","Vikash kumar","Ram kumar","Basant kumar"]
+  usersDetail =[
+    {name : "raju kumar",mob : "7903241183",Dob : "12/06/97",Address : "Bihar patna"},
+    {name : "raj kumar",mob : "7903241183",Dob : "11/06/97",Address : "Bihar patna"},
+    {name : "rahul kumar",mob : "7903241183",Dob : "22/06/97",Address : "Bihar patna"},
+    {name : "ram kumar",mob : "7903241183",Dob : "2/06/97",Address : "Bihar patna"}
+  ]
   getName(){
     alert("Hello World this is angular")
   }
