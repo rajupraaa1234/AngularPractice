@@ -59,9 +59,14 @@
  </div>
 
  <!-- For Loop -->
- <h2 *ngFor = "let item of users">name is : {{item}}</h2>
+<h2 *ngFor = "let item of users">name is : {{item}}</h2>
+<h2 *ngFor = "let items of usersDetail">{{items.name}}  {{items.Dob}} {{items.Address}} {{items.mob}}</h2>
 
- <h2 *ngFor = "let items of usersDetail">{{items.name}}  {{items.Dob}} {{items.Address}} {{items.mob}}</h2>
+<!-- Style binding -->
+<br/>
+<h2 [style.color]="styleColor" [style.backgroundColor]="styleBackColor">Style Binding </h2>
+<br/>
+<button (click)="changeStyleColor()">change color</button>
 
 
 <button (click)="getName()">Click me</button>

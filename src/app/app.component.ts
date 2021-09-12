@@ -11,6 +11,8 @@ export class AppComponent {
   show = false;
   color = "blue";
   color1 ="green";
+  styleBackColor ="red";
+  styleColor = "blue";
   users = ["Raju kumar","Rahul kumar gupta","Vikash kumar","Ram kumar","Basant kumar"]
   usersDetail =[
     {name : "raju kumar",mob : "7903241183",Dob : "12/06/97",Address : "Bihar patna"},
@@ -46,5 +48,8 @@ export class AppComponent {
   printValueOnPAge(val:any){
        this.data = val;
   }
-
+  changeStyleColor(){
+    this.styleColor="green";
+    this.styleBackColor="black"
+  }
 }
