@@ -32,7 +32,30 @@
 <ng-template #elseBlock> 
     <h2>Else Block </h2>
  </ng-template>
+ 
+ <!-- multiple if condition  -->
+ <br/>
+ <ng-template [ngIf]="color === 'red' "> 
+    <h2 style="color: red;">Red Color</h2>
+ </ng-template>
 
+ <ng-template [ngIf]="color === 'green' "> 
+    <h2 style="color: green;">Green Color</h2>
+ </ng-template>
+
+ <ng-template [ngIf]="color === 'blue' "> 
+    <h2 style="color: blue;">Blue Color</h2>
+ </ng-template>
+
+ <br/>
+ <div [ngSwitch]="color1">
+    <h2 *ngSwitchCase="'red'" style="color: red;">Red Color</h2>
+    <h2 *ngSwitchCase="'green'" style="color: green;">Green Color</h2>
+    <h2 *ngSwitchCase="'blue'" style="color: blue;">blue Color</h2>
+    <h2 *ngSwitchCase="'yellow'" style="color: yellow;">yellow Color</h2>
+    <h2 *ngSwitchDefault >Default Color</h2>
+
+ </div>
 
 <button (click)="getName()">Click me</button>
 <button (click)="getFullName('Raju kumar')">get first name</button>

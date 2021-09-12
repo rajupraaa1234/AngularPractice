@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularPractice';
   data = "";
-  show = false
+  show = false;
+  color = "blue";
+  color1 ="green";
   getName(){
     alert("Hello World this is angular")
   }
