@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPractice';
+  data = "";
+  show = false
   getName(){
     alert("Hello World this is angular")
   }
@@ -30,6 +32,10 @@ export class AppComponent {
 
   mouseLeaveCalled(){
     console.warn("MouseLeave Called")
+  }
+
+  printValueOnPAge(val:any){
+       this.data = val;
   }
 
 }

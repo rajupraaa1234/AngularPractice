@@ -5,13 +5,33 @@
 
 <input type="text" #box (keyup)="printConsoleWithData(box.value)" placeholder="enter console data"/>
 <br/><br/>
-<input type="text" #box1 (blur)="printConsoleOnBlur(box.value)" placeholder="enter console data"/>
+<input type="text" #box1 (blur)="printConsoleOnBlur(box1.value)" placeholder="enter console data"/>
+
+<br/> 
+<input type="text" #box2 (keyup)="printValueOnPAge(box2.value)" placeholder="enter name"/>
+<br/>
+<p >User name Entered : {{data}}</p>
+
+<br/>
+<h2 class="heading">Hii Globle Style</h2>
 
 <br/>
 <br/>
 <h2 (mouseover)="mouseOverCalled()">MouseOver Example</h2>
 <br/>
 <h2 (mouseleave)="mouseLeaveCalled()">MouseLeave Example</h2>
+
+
+<!-- if else statement in Angular -->
+<br/>
+<h2 *ngIf = "show; then ifBlock else elseBlock"></h2>
+
+<ng-template #ifBlock> 
+   <h2>If Block </h2>
+</ng-template>
+<ng-template #elseBlock> 
+    <h2>Else Block </h2>
+ </ng-template>
 
 
 <button (click)="getName()">Click me</button>
